@@ -1,0 +1,4 @@
+Flask==0.8
+transformers
+requests==0.11.1
+torch>=1.0.0
