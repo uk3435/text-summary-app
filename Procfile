@@ -1,1 +1,1 @@
-web: python text-summary-app-heroku.py
+python text-summary-app-heroku.py
