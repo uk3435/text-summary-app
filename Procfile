@@ -1,1 +1,1 @@
-web: gunicorn app:text-summary-app-heroku
+web: gunicorn app:summary-api
