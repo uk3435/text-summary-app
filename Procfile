@@ -1,1 +1,1 @@
-web: python text-summary-app-heroku.py
+web: gunicorn app:text-summary-app-heroku
