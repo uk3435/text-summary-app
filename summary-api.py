@@ -41,19 +41,20 @@ app = Flask(__name__)
 
 @app.route("/")
 def api():
-    name=request.args.get("ozet")
-    summ=summarizator(name)
-    # resp_str = json.dumps(gptThree(name))
-    # resp_dict=json.loads(resp_str)
-    # print (resp_dict['choices'][0]['text'])
-    # summ=resp_dict['choices'][0]['text']
-    return str(summ)
+    #name=request.args.get("ozet")
+    #summ=summarizator(name)
+      # resp_str = json.dumps(gptThree(name))
+      # resp_dict=json.loads(resp_str)
+      # print (resp_dict['choices'][0]['text'])
+      # summ=resp_dict['choices'][0]['text']
+    #return str(summ)
+    return "MERHABA"
     
 if __name__ =="__main__":
-    port=5000
-    app.run(host='0.0.0.0',port=port)
+    #port=5000
+    #app.run(host='0.0.0.0',port=port)
+    app.run(debug=True)
 
 
 
 
-#src_text = [text_api]
