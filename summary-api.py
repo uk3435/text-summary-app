@@ -1,15 +1,16 @@
 from flask import Flask,request
-import openai
-import json
+#import openai
+#import json
 
 from transformers import PegasusForConditionalGeneration, PegasusTokenizer
 
-import torch
+#import torch
   
 def summarizator(name1):
     
     model_name = 'google/pegasus-xsum'
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    #device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = 'cpu'
     tokenizer = PegasusTokenizer.from_pretrained(model_name)
     model = PegasusForConditionalGeneration.from_pretrained(model_name).to(device)
     batch = tokenizer(name1, truncation=True, padding='longest', return_tensors="pt").to(device)
